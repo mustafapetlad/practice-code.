@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header, nav, footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+        .main-content {
+            width: 60%;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        footer {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <nav>
+        <h2>Navigation Menu</h2>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">Content</div>
+        <div class="main-content">Main Content</div>
+        <div class="sidebar">Content</div>
+    </div>
+
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+
+</body>
+</html>
