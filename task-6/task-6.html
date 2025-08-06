@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Layout Example</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header, nav, footer {
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 10px;
-        }
-        .container {
-            display: flex;
-        }
-        .sidebar {
-            width: 20%;
-            background-color: #e0e0e0;
-            padding: 10px;
-        }
-        .main-content {
-            width: 60%;
-            padding: 10px;
-            background-color: #ffffff;
-        }
-        footer {
-            background-color: #f2f2f2;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layout Structure</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      border: 1px solid blue;
+    }
+
+    header, nav, footer {
+      border: 1px solid blue;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .main {
+      display: flex;
+      flex: 1;
+      border-top: 1px solid blue;
+      border-bottom: 1px solid blue;
+    }
+
+    .sidebar {
+      width: 15%;
+      border: 1px solid blue;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .content {
+      width: 70%;
+      border: 1px solid blue;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      border: 1px solid blue;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-
-    <header>
-        <h1>Header</h1>
-    </header>
-
-    <nav>
-        <h2>Navigation Menu</h2>
-    </nav>
-
-    <div class="container">
-        <div class="sidebar">Content</div>
-        <div class="main-content">Main Content</div>
-        <div class="sidebar">Content</div>
+  <div class="container">
+    <header>Header</header>
+    <nav>Nav Menu</nav>
+    <div class="main">
+      <div class="sidebar">content-1</div>
+      <div class="content">Main Content</div>
+      <div class="sidebar">content-2</div>
     </div>
-
-    <footer>
-        <h3>Footer</h3>
-    </footer>
-
+    <footer>Footer</footer>
+  </div>
 </body>
 </html>
+
