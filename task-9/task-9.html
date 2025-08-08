@@ -1,72 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .heading-image {
-            display: flex;
-            gap: 200px;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Task-9</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f8f6f1;
+  }
 
-        .text1 {
-            max-width: 500px;
-            background-color: gray;
-            border-radius: 10px;
-            font-family: 'Courier New', monospace;
-        }
+  .container {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgb(0 0 0 / 0.1);
+  }
 
-        .paragraph-anchor {
-            display: flex;
-            gap: 200px;
-        }
+  .left-column {
+    flex: 2;
+  }
 
-        .text-formatting {
+  .right-column {
+    flex: 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    margin: 0 0 10px 0;
+  }
+
+  pre {
+    background: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+
+  .box {
+    background: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+
+  .color-codes p {
+    margin: 3px 0;
+  }
+
+  code {
+    background: #ddd;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  .in-a-row {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 20px;
         }
 
-        .formatting-blocks {
+     .formatting-blocks {
             display: flex;
             gap: 100px;
         }
-        .color-codes p{
-            text-align: center;
-            width: 20px;
-            padding: 10px;
+
+  a {
+    color: #0654ba;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .list1{
+            padding-left: 10px;
+            padding-top: 0px;
         }
-        
-    </style>
+        .table1, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        .table1 thead{
+            background-color: lightgray;
+        }
+</style>
 </head>
 <body>
-    <div class="heading-image">
-        <div>
-            <h1>&lt;h1&gt; Heading</h1>
-            <h2>&lt;h2&gt; Heading</h2>
-            <h3>&lt;h3&gt; Heading</h3>
-            <h4>&lt;h4&gt; Heading</h4>
-            <h5>&lt;h5&gt; Heading</h5>
-            <h6>&lt;h6&gt; Heading</h6>
-        </div>
-        <div>
-            <img src="/tasks/download.jpeg" alt="a sample image">
-        </div>
-    </div>
 
-    <div class="paragraph-anchor">
-        <div class="text1">
-            <p>This is paragraph of text</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio in quidem eius eligendi. Tempora corporis natus ratione vero sapiente cupiditate est perspiciatis quis quisquam, blanditiis ut sint accusantium non.</p>
-        </div>
-        <div>
-            <a href="mailto:someone@example.com">someone@example.com</a>
-        </div>
-    </div>
+<div class="container">
 
-    <div class="text-formatting">
-        <h3>Text formatting</h3>
+  <div class="left-column">
+    <div>
+        <h1>&lt;h1&gt; Heading</h1>
+        <h2>&lt;h2&gt; Heading</h2>
+        <h3>&lt;h3&gt; Heading</h3>
+        <h4>&lt;h4&gt; Heading</h4>
+        <h5>&lt;h5&gt; Heading</h5>
+        <h6>&lt;h6&gt; Heading</h6>
+    </div><br>
+    <div>
+        <h3>Paragraphs and Preformatted Text</h3>
+        <p>This is a paragraph of text.</p>
+        <pre>This is some preformatted text.
+It is displayed in fixed-width font.</pre>
+    </div><br>
+
+     <h3>Text formatting</h3>
+    <div class="in-a-row">
         <div class="formatting-blocks">
             <div>
                 <p><b>&lt;b&gt;Bold text</b></p>
@@ -81,35 +134,104 @@
                 <p><sup>Superscript text</sup></p>
             </div>
         </div>
-    </div>
+    </div><br>
+
+    <h3>Sementic and quotation tags</h3>
      <div>
         <p>Gandhiji once said:</p>
         <blockquote>
         An eye for an eye will leave the whole world blind.
         </blockquote>
         <P>he said<q>today is monday.</q></P>
-        <abbr title="hyper text markup language">HTML</abbr>
-        <address>
+        <abbr title="hyper text markup language">HTML</abbr><br>
+        <br><address>
             John Doe<br>
             123 Main Street<br>
             Cityville, Country<br>
-        </address>
-    </div>
-    <div>
-        <h3>List</h3>
-        <ol>
-            <li>item </li>
-            <li>item </li>
-            <li>item </li>
-            <li>item </li>
-        </ol>
-        <br>
-        <h3>color codes</h3>
-        <div class="color-codes">
-            <p style="color: rgb(255,0,0)">RGB</p>
-            <p>HEX</p>
-            <p>HSL</p>
+        </address><br>
+        <p>&lt;cite&gt; A reference to a source</p>
+    </div><br>
+
+   <div class="in-a-row">
+        <div>
+            <h3>List</h3>
+            <ol class="list1">
+                <li> first item </li>
+                <li> second item </li>
+                <li> third item </li>
+                <li> forth item</li>
+            </ol>
         </div>
+        <div>
+            <h3>Table</h3>
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th>Row 1</th>
+                        <th>Row 2</th>
+                        <th>Row 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ROW 1</td>
+                        <td colspan="2">colspann</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2</td>
+                        <td colspan="2">Tcot.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> 
+</div> 
+
+  <div class="right-column">
+    <div class="box" style="text-align:center;">
+      <div>Responsive Image</div>
+      <div style="background:#ccc; height:150px; width:150px; margin: 10px auto; display:flex; align-items:center; justify-content:center;">
+         <div>
+            <img src="/tasks/download.jpeg" alt="a sample image">
+        </div>
+      </div>
     </div>
+
+    <div class="box">
+      <strong>Table</strong>
+      <p><code>&lt;picture example.com&gt;</code></p>
+    </div>
+
+    <div class="box">
+      <strong>Anchor</strong>
+      <p><code>&lt;a&gt;</code> Avoa <a href="http://example.com">example.com</a></p>
+    </div>
+
+    <div class="box color-codes">
+      <strong>Color Codes</strong>
+      <p><span style="color:rgb(255,0,0)">RGB</span> (255, 0, 0)</p>
+      <p><span style="color:#3498db">HEX</span> #3498db</p>
+      <p><span style="color:green">HSL</span> (Green 120, 50%)</p>
+    </div>
+
+    <div class="box">
+      <strong>Lists</strong>
+      <ol style="padding-left: 20px; margin: 0;">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+    </div>
+
+    <div class="box color-codes">
+      <strong>Color Codes</strong>
+      <p><span style="color:red">R</span> (255, 0, 0)</p>
+      <p><span style="color:blue">HEX</span> #3498db</p>
+      <p><span style="color:green">HSL</span> Green</p>
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
