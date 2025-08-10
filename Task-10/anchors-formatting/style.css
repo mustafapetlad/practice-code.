@@ -1,0 +1,44 @@
+body{
+    background-color: #f0f3fa;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 3% 25%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    padding: 0px 10px;
+}
+
+.plate{
+    width: 120px;
+    height: 80px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.plate p{
+    text-align: center;
+    color: #979797;
+    font-size: 25px;
+    font-family: sans-serif;
+
+}
+
+.anchor-tags ul{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+}
+
+.formatting-tags{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding: 0px;
+}
